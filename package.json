@@ -1,22 +1,26 @@
 {
   "name": "aws-sqs-fifo-test",
   "version": "1.0.0",
-  "description": "Testing Producer / Multiple Consumer pattern with AWS SQS FIFO ",
+  "description": "Testing Producer / Multiple Consumer pattern with AWS SQS FIFO and Node.js",
   "main": "src/index.ts",
   "author": "Michal Nawrot <m.nawrot@desiter.pl>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node src/producer",
+    "producer": "ts-node src/producer",
     "consumer": "ts-node src/consumer",
     "lint": "tslint -p tsconfig.json --fix"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.1",
     "@types/sqs-consumer": "^3.8.0",
+    "@types/sqs-producer": "^1.5.4",
+    "@types/uuid": "^3.4.4",
     "@types/winston": "^2.4.4",
     "aws-sdk": "^2.437.0",
     "dotenv": "^7.0.0",
     "sqs-consumer": "^5.2.0",
+    "sqs-producer": "^1.6.3",
+    "uuid": "^3.3.2",
     "winston": "^3.2.1"
   },
   "devDependencies": {

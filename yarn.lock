@@ -22,6 +22,21 @@
     "@types/node" "*"
     aws-sdk "^2.37.0"
 
+"@types/sqs-producer@^1.5.4":
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@types/sqs-producer/-/sqs-producer-1.5.4.tgz#f64c3e55b50b6cd64486f585772a833718b01933"
+  integrity sha512-1egf6NhaRaDftDSvyeQtnoixt3gK1dqQwMT8mHYAZ9//XV3GjJkGlQCP8nv0CnPP2ALHI9uDFQYuC1K6TwUhHw==
+  dependencies:
+    "@types/node" "*"
+    aws-sdk "^2.37.0"
+
+"@types/uuid@^3.4.4":
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.4.tgz#7af69360fa65ef0decb41fd150bf4ca5c0cefdf5"
+  integrity sha512-tPIgT0GUmdJQNSHxp0X2jnpQfBSTfGxUMc/2CXBU2mnyTFVYVa2ojpoQ74w0U2yn2vw3jnC640+77lkFFpdVDw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/winston@^2.4.4":
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/@types/winston/-/winston-2.4.4.tgz#48cc744b7b42fad74b9a2e8490e0112bd9a3d08d"
@@ -372,7 +387,7 @@ kuler@1.0.x:
   dependencies:
     colornames "^1.1.1"
 
-lodash@^4.17.11:
+lodash@^4.17.11, lodash@^4.17.4:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -536,6 +551,14 @@ sqs-consumer@^5.2.0:
     aws-sdk "^2.393.0"
     debug "^4.1.1"
 
+sqs-producer@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/sqs-producer/-/sqs-producer-1.6.3.tgz#7936495954f2c4b430bf49a4340d3e118d10dd3d"
+  integrity sha512-zfyAJ9xlGaZhNetwwSIWv+/jsrE4e6SVRf0Wdtm6BQH8iSHS8vsr8ZaGrwTvvIIxfslESo5KvRV4Zf7ardGxzQ==
+  dependencies:
+    aws-sdk "^2.393.0"
+    lodash "^4.17.4"
+
 stack-trace@0.0.x:
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.10.tgz#547c70b347e8d32b4e108ea1a2a159e5fdde19c0"
@@ -644,7 +667,7 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-uuid@3.3.2:
+uuid@3.3.2, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
