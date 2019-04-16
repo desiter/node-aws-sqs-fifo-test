@@ -1,15 +1,14 @@
-import winston from "winston";
+import winston, { format } from "winston";
 import config from "./config";
+
+const { combine, timestamp, json } = format;
 
 const logger = winston.createLogger({
   level: config.LOG_LEVEL || "info",
 
-  defaultMeta: { service: "aws-sqs-produce-consumer-test" },
-  format: winston.format.json(),
+  format: combine(timestamp(), json()),
   transports: [
-    new winston.transports.Console({
-      format: winston.format.simple(),
-    }),
+    new winston.transports.Console(),
   ],
 });
 
